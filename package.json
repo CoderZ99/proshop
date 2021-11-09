@@ -1,0 +1,38 @@
+{
+  "name": "da",
+  "version": "1.0.0",
+  "description": "MERN shopping app cart",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoderZ99/proshop.git"
+  },
+  "author": "Minh Quan",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.7"
+  },
+  "bugs": {
+    "url": "https://github.com/CoderZ99/proshop/issues"
+  },
+  "homepage": "https://github.com/CoderZ99/proshop#readme",
+  "devDependencies": {
+    "concurrently": "^6.3.0",
+    "currently": "0.0.8",
+    "nodemon": "^2.0.14"
+  }
+}
